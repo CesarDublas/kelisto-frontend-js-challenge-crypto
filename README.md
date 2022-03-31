@@ -58,13 +58,13 @@ In this exercise, you will develop a crypto dashboard page. Your solution should
 />
 ```
 
-- Font Icon: [Kelisto Frontend Challenge Icons](https://d1azc1qln24ryf.cloudfront.net/174874/FrontendChallenge/style-cf.css?fhefj0).
+- Font Icon: [Kelisto Frontend Challenge Icons](https://d1azc1qln24ryf.cloudfront.net/174874/FrontendChallenge/style-cf.scss?fhefj0).
 
 ```html
 /* Font Icon usage */
 <link
   rel="stylesheet"
-  href="https://d1azc1qln24ryf.cloudfront.net/174874/FrontendChallenge/style-cf.css?fhefj0"
+  href="https://d1azc1qln24ryf.cloudfront.net/174874/FrontendChallenge/style-cf.scss?fhefj0"
 />
 
 <i class="k-icon-bell"></i>
