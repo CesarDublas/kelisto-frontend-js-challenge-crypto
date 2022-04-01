@@ -1,7 +1,53 @@
 @import '../../App.scss';
 .PageContent{
     width: 100%;
+    height: 70vh;
     display: flex;
-    justify-content: space-around;
-    
+    flex-direction: column;
+    background-color: $white;
+    border-top-left-radius: $content-border-radius;
+    border-top-right-radius: $content-border-radius;
+    padding-top: 5vh;
+
+    .Content{
+        height: 58vh;
+        padding: 0 5vh 5vh 5vh;
+
+        h1{
+            font-size: $text-medium;
+            color: $grey;
+            font-weight: 300;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+
+        button{
+            margin-top: 2vh;
+            background-color: $blue;
+            color: $white;
+            padding: auto;
+            width: 100%;
+            border-radius: $button-border-radius;
+            height: 10vh;
+            
+        }
+
+        label{
+            font-size: $text-medium;
+            color: $blue;
+        }
+
+        input{
+            width: 100%;
+            height: 5vh;
+            display: inline;
+            border: 2px solid $grey;
+            border-radius: $button-border-radius;
+            font-size: $text-medium;
+            text-align: center;
+        }
+    }
+    .Footer{
+        height: 12vh;
+    }
 }

@@ -2,5 +2,41 @@
 .Header{
     width: 100%;
     display: flex;
-    justify-content: space-around; 
+    justify-content: center;
+    height: 25vh;
+
+    .center{
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 2vh;
+
+        span:first-child{
+            margin-bottom: 5vh;
+            font-size: $text-medium;
+        }
+
+        span:nth-child(2){
+            font-size: $text-small;
+            color: $purple;
+            letter-spacing: 2px;
+        }
+
+        span:last-child{
+            margin-top: 2vh;
+            font-size: $text-big;
+        }
+    }
+    .notifications{
+        position: absolute;
+        top: 2vh;
+        right: 4vw;
+        font-size: 1.5em;
+        a{
+           color: $white;
+            text-decoration: none; 
+        }
+        
+    }
 }

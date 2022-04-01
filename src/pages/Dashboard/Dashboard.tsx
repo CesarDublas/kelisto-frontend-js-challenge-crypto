@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Footer from "../../components/Footer/Footer";
+import React from "react";
 import Header from "../../components/Header/Header";
 import PageContent from "../../components/PageContent/PageContent";
 
@@ -11,9 +10,8 @@ interface DashboardProps {
 const Dashboard: Function = ({title,content}:DashboardProps) => {
     return (
         <>
-        <Header />
-        <PageContent content={content}/>
-        <Footer/>
+        <Header/>
+        <PageContent content={content} title={title}/>
         </>
     );
 }
