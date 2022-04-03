@@ -42,7 +42,10 @@ const Footer: Function = () => {
       key={action.label} 
       className="inactive" 
       onClick={refresh}
-    ><i className={action.icon}/></button>
+    >
+      <i className={action.icon}/>
+      <span className="button-name">{action.label}</span>
+    </button>
     :
       <Link to={'/' + action.label} key={action.label}>
         <button
@@ -50,6 +53,7 @@ const Footer: Function = () => {
           className={location === '/' + action.label ? 'active' : 'inactive'}
           >
             <i className={action.icon}/>
+            <span className="button-name">{action.label}</span>
           </button>
       </Link>
           

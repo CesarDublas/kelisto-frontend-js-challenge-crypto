@@ -23,6 +23,23 @@
                 color: $white;
             }
         }
+        @media (min-width: 600px) {
+            width: 150px;
+        }
+
+        i{
+            display: block;
+        }
+
+        .button-name{
+            display: none;
+
+            @media (min-width: 600px) {
+                display: block;
+                text-transform: capitalize;
+                font-size: $text-medium;
+            }
+        }
     }
     
 }
