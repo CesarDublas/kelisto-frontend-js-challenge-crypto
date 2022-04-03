@@ -2,7 +2,6 @@ import { render, screen, RenderResult, fireEvent } from '@testing-library/react'
 import { Provider } from 'react-redux';
 import { store } from '../../app/store';
 import { MemoryRouter } from "react-router-dom";
-import { getList, calculateTotals, refreshList, changeName, selectTotal } from "../PageContent/components/CryptoList/cryptoSlice";
 import Footer from './Footer';
 import Header from '../Header/Header';
 
