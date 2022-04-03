@@ -22,7 +22,7 @@ const PageContent: Function = ({content, title}: PageContentProps) => {
   };
 
   return (
-    <div className="PageContent">
+    <div id="PageContent" data-testid="PageContent">
       <div className="Content">
         <h1>{title}</h1>
         {title === "recent" ?

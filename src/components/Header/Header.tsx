@@ -9,15 +9,15 @@ const Header: Function = () => {
   const balance = useAppSelector(selectTotal);
   const name = useAppSelector(selectName);
   return (
-    <div className="Header">
+    <div id="Header" data-testid="Header">
       <span className="center">
-        <span>Hi, {name}</span>
+        <span data-testid='name'>Hi, {name}</span>
         <span>your balance</span>
-        <span>$ {balance.toLocaleString('en')}</span>
+        <span data-testid='balance'>$ {balance.toLocaleString('en')}</span>
         
       </span>
       <span className="notifications">
-        <Link to="/notifications">
+        <Link to="/notifications" data-testid='notifications'>
           <i className="k-icon-bell"/>
         </Link>
       </span>

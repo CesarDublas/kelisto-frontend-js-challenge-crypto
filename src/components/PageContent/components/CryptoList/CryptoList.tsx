@@ -1,7 +1,5 @@
-import React, { useState } from "react";
 import { Crypto } from "./Crypto";
-import { getCryptoList } from "./cryptoApi";
-import { useAppSelector, useAppDispatch } from '../../../../app/hooks';
+import { useAppSelector } from '../../../../app/hooks';
 
 import './CryptoList.scss';
 import { selectList } from "./cryptoSlice";

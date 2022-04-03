@@ -35,15 +35,20 @@ const Footer: Function = () => {
     },
   ];
   return (
-    <div className="Footer">
+    <div id="Footer" data-testid="Footer">
     {actions.map(action =>
     action.label ==='refresh' ?
-    <button key={action.label} className="inactive" onClick={refresh}><i className={action.icon}/></button>
+    <button 
+      data-testid={action.label} 
+      key={action.label} 
+      className="inactive" 
+      onClick={refresh}
+    ><i className={action.icon}/></button>
     :
       <Link to={'/' + action.label} key={action.label}>
         <button
+          data-testid={action.label}
           className={location === '/' + action.label ? 'active' : 'inactive'}
-
           >
             <i className={action.icon}/>
           </button>
